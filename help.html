@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help | Sunrise</title>
+  <meta name="robots" content="noindex">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="app-body">
+
+<div class="side-backdrop"></div>
+
+<div class="app">
+
+  <!-- ============ sidebar ============ -->
+  <aside class="side">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-1.6 0-2.3.6-3.7.6C6.3 3.6 4 5.2 4 8.6c0 2.7.9 4.3 1.6 6.6.5 1.6.6 4.8 2.2 4.8 1.5 0 1.6-2.4 2.4-4.3.4-1 .9-1.5 1.8-1.5s1.4.5 1.8 1.5c.8 1.9.9 4.3 2.4 4.3 1.6 0 1.7-3.2 2.2-4.8.7-2.3 1.6-3.9 1.6-6.6 0-3.4-2.3-5-4.3-5-1.4 0-2.1-.6-3.7-.6Z"/></svg>
+      </span>
+      <span class="brand__text"><strong>Sunrise</strong><em>Front desk</em></span>
+    </a>
+
+    <p class="side__label">Workspace</p>
+    <nav class="side__nav" aria-label="Workspace">
+      <a href="dashboard.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="3.2" width="7.6" height="7.6" rx="1.6"/><rect x="13.2" y="3.2" width="7.6" height="4.6" rx="1.6"/><rect x="13.2" y="10.2" width="7.6" height="10.6" rx="1.6"/><rect x="3.2" y="13.2" width="7.6" height="7.6" rx="1.6"/></svg>
+        Dashboard
+      </a>
+      <a href="appointment.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M8 2.5v4M16 2.5v4M3 9.5h18M12 13v5M9.5 15.5h5"/></svg>
+        Register appointment
+      </a>
+      <a href="search.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+        Find appointment
+      </a>
+      <a href="billing.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.5h12v19l-3-2-3 2-3-2-3 2v-19Z"/><path d="M9.5 8h5M9.5 12h5"/></svg>
+        Bills and receipts
+      </a>
+      <a href="patients.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3.5 19.2c0-3.3 2.5-5.7 5.5-5.7s5.5 2.4 5.5 5.7"/><circle cx="17.5" cy="8.7" r="2.3"/><path d="M15.8 13.6c2.4.5 4.2 2.6 4.2 5.6"/></svg>
+        Patients
+      </a>
+      <a href="reminders.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9.8a6 6 0 0 1 12 0c0 3.3.8 5.1 1.6 6.2H4.4c.8-1.1 1.6-2.9 1.6-6.2Z"/><path d="M10.2 19.4a1.9 1.9 0 0 0 3.6 0"/></svg>
+        Reminders
+      </a>
+    </nav>
+
+    <p class="side__label" data-admin-only hidden>Manage</p>
+    <nav class="side__nav" aria-label="Manage" data-admin-only hidden>
+      <a href="reports.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 19v-6M12.5 19V9M17 19v-9"/></svg>
+        Reports
+      </a>
+      <a href="admin.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.6 2.9c.5-1.2 2.3-1.2 2.8 0l.4 1c.3.7 1.1 1.1 1.8.9l1-.3c1.3-.4 2.4.9 1.8 2.1l-.5.9c-.4.6-.2 1.5.4 2l.8.6c1 .8.7 2.5-.6 2.9l-1 .3c-.7.2-1.2 1-1.1 1.7l.1 1c.2 1.3-1.2 2.2-2.3 1.5l-.9-.6c-.6-.4-1.5-.4-2 0l-.9.6c-1.1.7-2.5-.2-2.3-1.5l.1-1c.1-.7-.4-1.5-1.1-1.7l-1-.3c-1.3-.4-1.6-2.1-.6-2.9l.8-.6c.6-.5.8-1.4.4-2l-.5-.9c-.6-1.2.5-2.5 1.8-2.1l1 .3c.7.2 1.5-.2 1.8-.9l.4-1Z"/><circle cx="12" cy="12" r="2.6"/></svg>
+        Admin panel
+      </a>
+    </nav>
+
+    <p class="side__label">Support</p>
+    <nav class="side__nav" aria-label="Support">
+      <a href="help.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9.2"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.3c-.7.3-1 .9-1 1.6v.3M12 17.2h.01"/></svg>
+        Help and instructions
+      </a>
+      <a href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+        Clinic website
+      </a>
+    </nav>
+
+    <div class="side__foot">
+      <div class="side__user">
+        <span class="side__avatar" aria-hidden="true">--</span>
+        <span class="side__who">
+          <strong data-user-name>Staff member</strong>
+          <span data-user-role>staff</span>
+        </span>
+      </div>
+      <button class="side__exit" type="button" data-logout>
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3.5h4a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-4"/><path d="M10 16.5 14.5 12 10 7.5M14.5 12H4"/></svg>
+        Exit the system
+      </button>
+    </div>
+  </aside>
+
+  <!-- ============ main ============ -->
+  <div class="app__main">
+
+    <header class="appbar">
+      <button class="side-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div>
+        <p class="appbar__crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Support</p>
+        <p class="appbar__title">Help and instructions</p>
+      </div>
+      <div class="appbar__spacer"></div>
+      <div class="appbar__actions"><a class="btn btn--primary" href="appointment.html">New <span>appointment</span></a></div>
+    </header>
+
+    <div class="app__content" data-demo-slot>
+      <div class="page-head wrap-mid">
+        <h1>Help and instructions</h1>
+        <p>Everything the front desk needs, in the order you will need it. If something
+           here does not match what you see on screen, call extension 12.</p>
+      </div>
+
+      <div class="guide">
+
+        <nav class="guide__toc" aria-label="On this page">
+          <a href="#start">Getting started</a>
+          <a href="#login">Signing in</a>
+          <a href="#register">Registering an appointment</a>
+          <a href="#find">Finding an appointment</a>
+          <a href="#bill">Issuing a bill</a>
+          <a href="#patients">Patient records</a>
+          <a href="#reminders">Reminders</a>
+          <a href="#manage">Reports and administration</a>
+          <a href="#status">What the statuses mean</a>
+          <a href="#trouble">Common problems</a>
+        </nav>
+
+        <div>
+
+          <!-- getting started -->
+          <section class="box" id="start">
+            <div class="box__head"><h2>Getting started</h2></div>
+            <p style="color:var(--ink-2);font-size:.95rem">
+              The sidebar on the left is always visible, so you can move between screens at any
+              point without losing your place. Reports and the admin panel only appear for
+              administrator accounts.
+            </p>
+            <ol class="howto" style="margin-top:20px">
+              <li><div><strong>Dashboard</strong><p>Where you land after signing in: today's list, what is still pending, and how the month is going.</p></div></li>
+              <li><div><strong>Register appointment</strong><p>Creates a new booking and gives you the appointment number.</p></div></li>
+              <li><div><strong>Find appointment</strong><p>Looks up a booking by its number, shows the day diary, and sends reminders.</p></div></li>
+              <li><div><strong>Bills and receipts</strong><p>Adds up the charges, applies the pricing rule, and prints the receipt.</p></div></li>
+              <li><div><strong>Patients</strong><p>The patient list: add, edit, remove, and read a patient's treatment history.</p></div></li>
+              <li><div><strong>Reminders</strong><p>Every message the system has sent, newest first.</p></div></li>
+              <li><div><strong>Exit the system</strong><p>The button at the bottom of the sidebar signs you out safely.</p></div></li>
+            </ol>
+          </section>
+
+          <!-- signing in -->
+          <section class="box" id="login">
+            <div class="box__head"><h2>Signing in</h2></div>
+            <ol class="howto">
+              <li><div><strong>Open the login page</strong><p>Go to the clinic website and press <em>Staff login</em>, top right.</p></div></li>
+              <li><div><strong>Enter your username and password</strong><p>These are issued by the administrator. Tick <em>Remember my username</em> on the front desk machine only.</p></div></li>
+              <li><div><strong>Press Sign in</strong><p>You land on the appointment screen. The session ends when the browser tab is closed.</p></div></li>
+            </ol>
+            <div class="notice notice--warn" style="margin-top:20px">
+              <span aria-hidden="true">&#9888;</span>
+              <span><strong>Never share an account.</strong>
+              Every record keeps the name of the person who created it, so a shared login makes the audit log useless.</span>
+            </div>
+          </section>
+
+          <!-- register -->
+          <section class="box" id="register">
+            <div class="box__head"><h2>Registering an appointment</h2></div>
+            <ol class="howto">
+              <li><div><strong>Take the patient details</strong><p>Full name, a 10 digit contact number and the address. All three are required.</p></div></li>
+              <li><div><strong>Choose the dentist and the treatment</strong><p>The estimated bill on the right updates as you choose, so you can quote the patient a price straight away.</p></div></li>
+              <li><div><strong>Pick a date and a free time slot</strong><p>Slots run from 8.30 a.m. to 6.30 p.m. in fifteen minute steps. Past dates are blocked.</p></div></li>
+              <li><div><strong>Press Save appointment</strong><p>The number, for example <code>APT-1042</code>, appears on a green confirmation panel. Write it on the patient card.</p></div></li>
+            </ol>
+            <div class="notice notice--info" style="margin-top:20px">
+              <span aria-hidden="true">&#9432;</span>
+              <span><strong>Double booking is not possible.</strong>
+              If that dentist already has a patient at that time, the system refuses the save and asks you to pick another slot.</span>
+            </div>
+          </section>
+
+          <!-- find -->
+          <section class="box" id="find">
+            <div class="box__head"><h2>Finding an appointment</h2></div>
+            <ol class="howto">
+              <li><div><strong>Search by number</strong><p>Type the appointment number and press <em>Search</em>. The full record opens below the box.</p></div></li>
+              <li><div><strong>Or browse the diary</strong><p>Filter by date, status or patient name, then click any row to open it.</p></div></li>
+              <li><div><strong>Update the status</strong><p>Use <em>Mark confirmed</em> when the patient calls to confirm, or <em>Cancel appointment</em> if they cannot make it.</p></div></li>
+            </ol>
+          </section>
+
+          <!-- bill -->
+          <section class="box" id="bill">
+            <div class="box__head"><h2>Issuing a bill</h2></div>
+            <ol class="howto">
+              <li><div><strong>Load the appointment</strong><p>Enter the number on the billing screen and press <em>Load</em>.</p></div></li>
+              <li><div><strong>Check the charges</strong><p>The preview shows the treatment cost, the consultation fee, and the total.</p></div></li>
+              <li><div><strong>Choose the pricing</strong><p><em>Standard</em> is the full price. <em>Senior citizen</em> takes 15% off the consultation fee, <em>Insurance</em> collects 80% of both charges from the patient, and <em>Loyalty discount</em> takes 10% off the treatment. The preview updates as you choose.</p></div></li>
+              <li><div><strong>Press Issue the bill</strong><p>The receipt is created and the appointment is marked as completed. The rule you picked is printed on the receipt.</p></div></li>
+              <li><div><strong>Print or save as PDF</strong><p>Press the print button and choose your printer, or <em>Save as PDF</em> to e-mail it to the patient.</p></div></li>
+            </ol>
+            <div class="notice notice--warn" style="margin-top:20px">
+              <span aria-hidden="true">&#9888;</span>
+              <span><strong>Check the entitlement first.</strong>
+              The system does not know who is a senior citizen or who is insured, so ask for the
+              card before choosing anything other than Standard. The rule you pick is stored with
+              the receipt and shows in the audit log.</span>
+            </div>
+          </section>
+
+          <!-- patients -->
+          <section class="box" id="patients">
+            <div class="box__head"><h2>Patient records</h2></div>
+            <ol class="howto">
+              <li><div><strong>Search first</strong><p>Type a name, phone number or part of an address. Booking an appointment already creates the patient, so most people are on file.</p></div></li>
+              <li><div><strong>Add or edit</strong><p>Use the form at the top. A contact number is 10 digits starting with 0, and it is what the system uses to recognise a returning patient.</p></div></li>
+              <li><div><strong>History</strong><p><em>History</em> lists every visit that patient has had, newest first, with its status.</p></div></li>
+              <li><div><strong>Delete</strong><p>Only possible for a patient with no appointments. Anyone who has been seen stays on file so their visits and receipts still make sense &mdash; edit their details instead.</p></div></li>
+            </ol>
+          </section>
+
+          <!-- reminders -->
+          <section class="box" id="reminders">
+            <div class="box__head"><h2>Reminders</h2></div>
+            <ol class="howto">
+              <li><div><strong>Sending one</strong><p>Open the visit on <em>Find appointment</em> and press <em>Send reminder</em>. Completed and cancelled visits cannot be reminded.</p></div></li>
+              <li><div><strong>The log</strong><p>The <em>Reminders</em> screen lists every confirmation, reminder, cancellation notice and receipt the system has sent.</p></div></li>
+            </ol>
+            <div class="notice notice--info" style="margin-top:20px">
+              <span aria-hidden="true">&#9432;</span>
+              <span><strong>No mail server is connected yet.</strong>
+              Messages are recorded in the log and printed to the server console rather than
+              actually posted, so the patient still needs a phone call for anything urgent.</span>
+            </div>
+          </section>
+
+          <!-- manage -->
+          <section class="box" id="manage">
+            <div class="box__head"><h2>Reports and administration</h2></div>
+            <p style="color:var(--ink-2);font-size:.95rem">
+              These two screens are for administrator accounts only; they are hidden from the
+              sidebar for everyone else.
+            </p>
+            <ol class="howto" style="margin-top:20px">
+              <li><div><strong>Reports</strong><p>The day's appointments, revenue between any two dates, the most common treatments, dentist workload and the top patients. <em>Print</em> puts the whole page on paper.</p></div></li>
+              <li><div><strong>Dentists and treatments</strong><p>Add new ones or change a price. Nothing is deleted: untick <em>Active</em> to retire a dentist or withdraw a treatment, and it stops being offered on the booking screen while old records keep working.</p></div></li>
+              <li><div><strong>Staff accounts</strong><p>Create an account, change a role, suspend someone, or set a new password. The system refuses to suspend or demote the last administrator.</p></div></li>
+              <li><div><strong>Audit log</strong><p>Who did what, and when &mdash; bookings, status changes, bills, reminders and every admin change.</p></div></li>
+            </ol>
+          </section>
+
+          <!-- statuses -->
+          <section class="box" id="status">
+            <div class="box__head"><h2>What the statuses mean</h2></div>
+            <div class="table-wrap">
+              <table class="table" style="min-width:520px">
+                <thead>
+                  <tr><th>Status</th><th>Meaning</th><th>Set when</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><span class="status status--pending">Pending</span></td><td>Booked, not yet confirmed by the patient</td><td>Automatically, on saving</td></tr>
+                  <tr><td><span class="status status--confirmed">Confirmed</span></td><td>The patient has confirmed they are coming</td><td>By staff, on the find screen</td></tr>
+                  <tr><td><span class="status status--completed">Completed</span></td><td>Treatment done and paid for</td><td>Automatically, when the bill is issued</td></tr>
+                  <tr><td><span class="status status--cancelled">Cancelled</span></td><td>Called off, the slot is free again</td><td>By staff, on the find screen</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- troubleshooting -->
+          <section id="trouble">
+            <div class="box__head" style="border:0;margin-bottom:12px"><h2>Common problems</h2></div>
+
+            <div class="faq">
+
+              <div class="faq__item" data-accordion>
+                <button type="button" aria-expanded="false" aria-controls="faq1">A yellow demo mode message is showing</button>
+                <div class="faq__panel" id="faq1" hidden>
+                  <p>The Java server is not running, so the pages are using sample data kept in this
+                     browser. Nothing is being written to MySQL. Start the backend and reload:</p>
+                  <ol style="margin-top:10px">
+                    <li>Start MySQL from the WAMP tray icon.</li>
+                    <li>Run the server class so it listens on port 8090.</li>
+                    <li>Reload this page. The yellow message disappears.</li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="faq__item" data-accordion>
+                <button type="button" aria-expanded="false" aria-controls="faq2">Sign in says the password is incorrect</button>
+                <div class="faq__panel" id="faq2" hidden>
+                  <p>Check that Caps Lock is off, and that the username has no trailing space.
+                     If it still fails, the administrator can reset the password from the users
+                     table. Three failed attempts do not lock the account.</p>
+                </div>
+              </div>
+
+              <div class="faq__item" data-accordion>
+                <button type="button" aria-expanded="false" aria-controls="faq3">The dentist or treatment list is empty</button>
+                <div class="faq__panel" id="faq3" hidden>
+                  <p>The lists are loaded from the <code>dentists</code> and <code>treatments</code>
+                     tables when the page opens. An empty list usually means the database connection
+                     failed. Check that MySQL is running and that the credentials in the
+                     configuration file are correct.</p>
+                </div>
+              </div>
+
+              <div class="faq__item" data-accordion>
+                <button type="button" aria-expanded="false" aria-controls="faq4">It says that slot is already taken</button>
+                <div class="faq__panel" id="faq4" hidden>
+                  <p>That dentist already has a patient booked at the same date and time. Choose the
+                     next free slot, or a different dentist. Cancelled appointments do not block a
+                     slot, so the time becomes available again as soon as one is cancelled.</p>
+                </div>
+              </div>
+
+              <div class="faq__item" data-accordion>
+                <button type="button" aria-expanded="false" aria-controls="faq5">The receipt prints with the sidebar on it</button>
+                <div class="faq__panel" id="faq5" hidden>
+                  <p>Use the <em>Print or save as PDF</em> button on the receipt rather than the browser
+                     menu. It applies the print layout, which hides the sidebar, the buttons and the
+                     top bar, leaving only the receipt.</p>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <div class="notice notice--info" style="margin-top:22px">
+            <span aria-hidden="true">&#9432;</span>
+            <span><strong>Still stuck?</strong>
+            Call the administrator on extension 12, or e-mail support@smilecare.lk with the
+            appointment number and what you were doing when the problem happened.</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/help.js"></script>
+</body>
+</html>

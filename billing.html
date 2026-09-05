@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bills and receipts | Sunrise</title>
+  <meta name="robots" content="noindex">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="app-body">
+
+<div class="side-backdrop"></div>
+
+<div class="app">
+
+  <!-- ============ sidebar ============ -->
+  <aside class="side">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-1.6 0-2.3.6-3.7.6C6.3 3.6 4 5.2 4 8.6c0 2.7.9 4.3 1.6 6.6.5 1.6.6 4.8 2.2 4.8 1.5 0 1.6-2.4 2.4-4.3.4-1 .9-1.5 1.8-1.5s1.4.5 1.8 1.5c.8 1.9.9 4.3 2.4 4.3 1.6 0 1.7-3.2 2.2-4.8.7-2.3 1.6-3.9 1.6-6.6 0-3.4-2.3-5-4.3-5-1.4 0-2.1-.6-3.7-.6Z"/></svg>
+      </span>
+      <span class="brand__text"><strong>Sunrise</strong><em>Front desk</em></span>
+    </a>
+
+    <p class="side__label">Workspace</p>
+    <nav class="side__nav" aria-label="Workspace">
+      <a href="dashboard.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="3.2" width="7.6" height="7.6" rx="1.6"/><rect x="13.2" y="3.2" width="7.6" height="4.6" rx="1.6"/><rect x="13.2" y="10.2" width="7.6" height="10.6" rx="1.6"/><rect x="3.2" y="13.2" width="7.6" height="7.6" rx="1.6"/></svg>
+        Dashboard
+      </a>
+      <a href="appointment.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M8 2.5v4M16 2.5v4M3 9.5h18M12 13v5M9.5 15.5h5"/></svg>
+        Register appointment
+      </a>
+      <a href="search.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+        Find appointment
+      </a>
+      <a href="billing.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.5h12v19l-3-2-3 2-3-2-3 2v-19Z"/><path d="M9.5 8h5M9.5 12h5"/></svg>
+        Bills and receipts
+      </a>
+      <a href="patients.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3.5 19.2c0-3.3 2.5-5.7 5.5-5.7s5.5 2.4 5.5 5.7"/><circle cx="17.5" cy="8.7" r="2.3"/><path d="M15.8 13.6c2.4.5 4.2 2.6 4.2 5.6"/></svg>
+        Patients
+      </a>
+      <a href="reminders.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9.8a6 6 0 0 1 12 0c0 3.3.8 5.1 1.6 6.2H4.4c.8-1.1 1.6-2.9 1.6-6.2Z"/><path d="M10.2 19.4a1.9 1.9 0 0 0 3.6 0"/></svg>
+        Reminders
+      </a>
+    </nav>
+
+    <p class="side__label" data-admin-only hidden>Manage</p>
+    <nav class="side__nav" aria-label="Manage" data-admin-only hidden>
+      <a href="reports.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 19v-6M12.5 19V9M17 19v-9"/></svg>
+        Reports
+      </a>
+      <a href="admin.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.6 2.9c.5-1.2 2.3-1.2 2.8 0l.4 1c.3.7 1.1 1.1 1.8.9l1-.3c1.3-.4 2.4.9 1.8 2.1l-.5.9c-.4.6-.2 1.5.4 2l.8.6c1 .8.7 2.5-.6 2.9l-1 .3c-.7.2-1.2 1-1.1 1.7l.1 1c.2 1.3-1.2 2.2-2.3 1.5l-.9-.6c-.6-.4-1.5-.4-2 0l-.9.6c-1.1.7-2.5-.2-2.3-1.5l.1-1c.1-.7-.4-1.5-1.1-1.7l-1-.3c-1.3-.4-1.6-2.1-.6-2.9l.8-.6c.6-.5.8-1.4.4-2l-.5-.9c-.6-1.2.5-2.5 1.8-2.1l1 .3c.7.2 1.5-.2 1.8-.9l.4-1Z"/><circle cx="12" cy="12" r="2.6"/></svg>
+        Admin panel
+      </a>
+    </nav>
+
+    <p class="side__label">Support</p>
+    <nav class="side__nav" aria-label="Support">
+      <a href="help.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9.2"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.3c-.7.3-1 .9-1 1.6v.3M12 17.2h.01"/></svg>
+        Help and instructions
+      </a>
+      <a href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+        Clinic website
+      </a>
+    </nav>
+
+    <div class="side__foot">
+      <div class="side__user">
+        <span class="side__avatar" aria-hidden="true">--</span>
+        <span class="side__who">
+          <strong data-user-name>Staff member</strong>
+          <span data-user-role>staff</span>
+        </span>
+      </div>
+      <button class="side__exit" type="button" data-logout>
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3.5h4a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-4"/><path d="M10 16.5 14.5 12 10 7.5M14.5 12H4"/></svg>
+        Exit the system
+      </button>
+    </div>
+  </aside>
+
+  <!-- ============ main ============ -->
+  <div class="app__main">
+
+    <header class="appbar">
+      <button class="side-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div>
+        <p class="appbar__crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Billing</p>
+        <p class="appbar__title">Bills and receipts</p>
+      </div>
+      <div class="appbar__spacer"></div>
+      <div class="appbar__actions"><a class="btn btn--ghost" href="search.html">Find <span>an appointment</span></a></div>
+    </header>
+
+    <div class="app__content" data-demo-slot>
+      <div class="page-head wrap-mid">
+        <h1>Bills and receipts</h1>
+        <p>Pull up a visit by its appointment number, check the charges, then issue the
+           receipt. The total is the treatment cost plus the consultation fee of the dentist.</p>
+      </div>
+
+      <!-- ---------- lookup ---------- -->
+      <div class="box wrap-mid no-print">
+        <div class="box__head">
+          <h2>Which appointment?</h2>
+          <p>The number printed on the patient card, for example APT-1042</p>
+        </div>
+
+        <form class="finder" id="billForm" novalidate>
+          <input class="input" id="billNo" type="text" placeholder="APT-1042"
+                 autocomplete="off" spellcheck="false" aria-label="Appointment number">
+          <button class="btn btn--primary" type="submit" id="billBtn">Load</button>
+        </form>
+      </div>
+
+      <!-- ---------- charges before issuing ---------- -->
+      <div class="box wrap-mid no-print" id="chargeBox" hidden>
+        <div class="box__head">
+          <h2>Charges</h2>
+          <span class="status status--pending" id="chargeStatus">Pending</span>
+        </div>
+
+        <div class="kv" id="chargeBody"></div>
+
+        <div class="field" style="margin-top:24px">
+          <label>Pricing</label>
+          <div class="chips" id="pricingChips">
+            <label class="chip"><input type="radio" name="pricing" value="standard" checked><span>Standard</span></label>
+            <label class="chip"><input type="radio" name="pricing" value="senior"><span>Senior citizen</span></label>
+            <label class="chip"><input type="radio" name="pricing" value="insurance"><span>Insurance</span></label>
+            <label class="chip"><input type="radio" name="pricing" value="loyalty"><span>Loyalty discount</span></label>
+          </div>
+          <span class="hint">Senior citizen takes 15% off the consultation fee, insurance collects 80% of both
+            charges from the patient, and the loyalty discount takes 10% off the treatment.</span>
+        </div>
+
+        <div class="rail" style="margin-top:22px;position:static">
+          <h3>Bill preview</h3>
+          <div class="rail__row"><span id="cTreatName">Treatment</span><span id="cTreat">Rs. 0.00</span></div>
+          <div class="rail__row"><span id="cConsultName">Consultation</span><span id="cConsult">Rs. 0.00</span></div>
+          <div class="rail__total"><span>Amount due</span><strong id="cTotal">Rs. 0.00</strong></div>
+        </div>
+
+        <div class="form-foot">
+          <p class="hint">Issuing the bill marks the appointment as completed.</p>
+          <button class="btn btn--primary" type="button" id="issueBtn">Issue the bill</button>
+        </div>
+      </div>
+
+      <!-- ---------- the receipt ---------- -->
+      <div id="receiptWrap" hidden>
+        <div class="box__head no-print" style="border:0;margin-bottom:12px">
+          <h2>Receipt</h2>
+          <div class="appbar__spacer"></div>
+          <button class="btn btn--ghost" type="button" id="printBtn">Print or save as PDF</button>
+          <button class="btn btn--quiet" type="button" id="newBillBtn">Another bill</button>
+        </div>
+
+        <article class="receipt" id="receipt">
+          <div class="receipt__top">
+            <div class="receipt__co">
+              <strong>Sunrise Dental Clinic</strong>
+              <p>No. 128, Galle Road, Colombo 03<br>011 234 5678 &middot; hello@smilecare.lk</p>
+            </div>
+            <div class="receipt__no">
+              <p>Receipt</p>
+              <strong id="rBillNo">BIL-0000</strong>
+            </div>
+          </div>
+
+          <div class="receipt__meta">
+            <div><span>Patient</span><b id="rPatient">-</b></div>
+            <div><span>Appointment</span><b id="rAppt">-</b></div>
+            <div><span>Dentist</span><b id="rDentist">-</b></div>
+            <div><span>Issued on</span><b id="rIssued">-</b></div>
+            <div><span>Pricing</span><b id="rPricing">Standard</b></div>
+          </div>
+
+          <table class="receipt__lines">
+            <thead>
+              <tr><th>Description</th><th class="num">Amount</th></tr>
+            </thead>
+            <tbody>
+              <tr><td id="rTreatName">Treatment</td><td class="num" id="rTreat">0.00</td></tr>
+              <tr><td>Consultation fee</td><td class="num" id="rConsult">0.00</td></tr>
+            </tbody>
+          </table>
+
+          <div class="receipt__total">
+            <span>Total paid</span>
+            <strong id="rTotal">Rs. 0.00</strong>
+          </div>
+
+          <p class="receipt__foot">
+            Thank you for visiting Sunrise Dental Clinic. Keep this receipt for your records;
+            it is required for any insurance or company reimbursement claim.
+            Issued by <span id="rBy">front desk</span>.
+          </p>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/billing.js"></script>
+</body>
+</html>

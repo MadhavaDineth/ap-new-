@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Staff login | Sunrise Dental Clinic</title>
+  <meta name="robots" content="noindex">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="login-body">
+
+<div class="auth">
+
+  <!-- left: what the system is for -->
+  <aside class="auth__aside">
+    <a class="brand brand--footer" href="index.html">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-1.6 0-2.3.6-3.7.6C6.3 3.6 4 5.2 4 8.6c0 2.7.9 4.3 1.6 6.6.5 1.6.6 4.8 2.2 4.8 1.5 0 1.6-2.4 2.4-4.3.4-1 .9-1.5 1.8-1.5s1.4.5 1.8 1.5c.8 1.9.9 4.3 2.4 4.3 1.6 0 1.7-3.2 2.2-4.8.7-2.3 1.6-3.9 1.6-6.6 0-3.4-2.3-5-4.3-5-1.4 0-2.1-.6-3.7-.6Z"/></svg>
+      </span>
+      <span class="brand__text"><strong>Sunrise</strong><em>Dental Clinic</em></span>
+    </a>
+
+    <div class="auth__pitch">
+      <h1>The front desk, on one screen.</h1>
+      <p>Sign in to register appointments, look up patient records and settle bills.</p>
+      <ul class="auth__list">
+        <li>Book a patient in under a minute, with clash checking</li>
+        <li>Find any appointment by its number</li>
+        <li>Print a receipt with the treatment cost and consultation fee</li>
+      </ul>
+    </div>
+
+    <p class="auth__note">Trouble signing in? Call the system administrator on extension 12.</p>
+  </aside>
+
+  <!-- right: the form -->
+  <main class="auth__panel">
+    <div class="auth__card">
+
+      <h2>Sign in</h2>
+      <p>Use the account issued to you by the clinic administrator.</p>
+
+      <form class="auth__form" id="loginForm" novalidate>
+
+        <div class="field" id="fUser">
+          <label for="username">Username</label>
+          <input class="input" id="username" name="username" type="text"
+                 autocomplete="username" placeholder="reception" required autofocus>
+          <span class="err" id="eUser">Please enter your username.</span>
+        </div>
+
+        <div class="field" id="fPass">
+          <label for="password">Password</label>
+          <div class="pw">
+            <input class="input" id="password" name="password" type="password"
+                   autocomplete="current-password" placeholder="Your password" required>
+            <button class="pw__eye" type="button" id="pwToggle" aria-label="Show password">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2.2 12S5.6 5.8 12 5.8 21.8 12 21.8 12 18.4 18.2 12 18.2 2.2 12 2.2 12Z"/>
+                <circle cx="12" cy="12" r="3.1"/>
+              </svg>
+            </button>
+          </div>
+          <span class="err" id="ePass">Please enter your password.</span>
+        </div>
+
+        <div class="auth__row">
+          <label class="auth__check">
+            <input type="checkbox" id="remember" name="remember">
+            Remember my username
+          </label>
+          <a class="auth__link" href="help.html#login">Need help?</a>
+        </div>
+
+        <button class="btn btn--primary" type="submit" id="loginBtn">Sign in</button>
+      </form>
+
+      <div class="auth__demo">
+        <strong>Demo accounts</strong> &mdash; used when the Java server is not running:<br>
+        <code>admin</code> / <code>admin123</code> &nbsp;&middot;&nbsp;
+        <code>reception</code> / <code>clinic123</code>
+      </div>
+
+      <p class="auth__back">Not staff? <a href="index.html">Go back to the clinic website</a></p>
+
+    </div>
+  </main>
+
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

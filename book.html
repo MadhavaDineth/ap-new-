@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book an appointment | Sunrise Dental Clinic</title>
+  <meta name="description" content="Book a dental appointment online at Sunrise Dental Clinic, Colombo 03. Pick your dentist, treatment and time, and get your appointment number straight away.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ utility bar ============ -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <p class="topbar__note">Open today &middot; 8.30 a.m. &ndash; 7.00 p.m.</p>
+    <div class="topbar__links">
+      <a href="tel:+94112345678">Hotline 011 234 5678</a>
+      <span class="dot" aria-hidden="true"></span>
+      <a href="mailto:hello@smilecare.lk">hello@smilecare.lk</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ header ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header__inner">
+
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-1.6 0-2.3.6-3.7.6C6.3 3.6 4 5.2 4 8.6c0 2.7.9 4.3 1.6 6.6.5 1.6.6 4.8 2.2 4.8 1.5 0 1.6-2.4 2.4-4.3.4-1 .9-1.5 1.8-1.5s1.4.5 1.8 1.5c.8 1.9.9 4.3 2.4 4.3 1.6 0 1.7-3.2 2.2-4.8.7-2.3 1.6-3.9 1.6-6.6 0-3.4-2.3-5-4.3-5-1.4 0-2.1-.6-3.7-.6Z"/></svg>
+      </span>
+      <span class="brand__text">
+        <strong>Sunrise</strong>
+        <em>Dental Clinic</em>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a href="index.html#services">Treatments</a></li>
+        <li><a href="index.html#dentists">Our dentists</a></li>
+        <li><a href="index.html#how">How it works</a></li>
+        <li><a href="index.html#contact">Visit us</a></li>
+        <li><a href="index.html#lookupForm">Check a booking</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="login.html">Staff login</a>
+        <a class="btn btn--primary" href="tel:+94112345678">Call the clinic</a>
+      </div>
+    </nav>
+
+  </div>
+</header>
+
+<main id="main">
+
+<section class="section section--tight">
+  <div class="container">
+
+    <div class="page-head wrap-mid" data-demo-slot>
+      <p class="eyebrow"><span class="eyebrow__dash" aria-hidden="true"></span>Online booking</p>
+      <h1>Book an appointment</h1>
+      <p>No account needed. Choose your dentist, the treatment and a free time slot,
+         and your appointment number appears on the next screen. The clinic calls you
+         back to confirm.</p>
+    </div>
+
+    <!-- ---------- the form ---------- -->
+    <div class="book" id="bookView">
+
+      <form class="box" id="apptForm" novalidate>
+
+        <div class="box__head">
+          <h2>Your details</h2>
+        </div>
+
+        <div class="form-grid">
+          <div class="field" id="fName">
+            <label for="patientName">Full name <span class="req">*</span></label>
+            <input class="input" id="patientName" name="patientName" type="text"
+                   placeholder="Nimal Perera" autocomplete="name" required>
+            <span class="err">Please enter your full name.</span>
+          </div>
+
+          <div class="field" id="fContact">
+            <label for="contactNo">Contact number <span class="req">*</span></label>
+            <input class="input" id="contactNo" name="contactNo" type="tel"
+                   placeholder="0771234567" inputmode="numeric" maxlength="12"
+                   autocomplete="tel" required>
+            <span class="err">Enter a 10 digit mobile or land number.</span>
+          </div>
+
+          <div class="field span-2" id="fAddress">
+            <label for="address">Address <span class="req">*</span></label>
+            <textarea class="textarea" id="address" name="address" rows="2"
+                      placeholder="45/2, Temple Road, Nugegoda" autocomplete="street-address" required></textarea>
+            <span class="err">Please enter your address.</span>
+          </div>
+        </div>
+
+        <div class="box__head" style="margin-top:30px">
+          <h2>Your appointment</h2>
+        </div>
+
+        <div class="form-grid">
+          <div class="field" id="fDentist">
+            <label for="dentistId">Dentist <span class="req">*</span></label>
+            <select class="select" id="dentistId" name="dentistId" required>
+              <option value="">Loading dentists...</option>
+            </select>
+            <span class="err">Please choose a dentist.</span>
+          </div>
+
+          <div class="field" id="fTreatment">
+            <label for="treatmentId">Treatment <span class="req">*</span></label>
+            <select class="select" id="treatmentId" name="treatmentId" required>
+              <option value="">Loading treatments...</option>
+            </select>
+            <span class="err">Please choose the treatment.</span>
+          </div>
+
+          <div class="field" id="fDate">
+            <label for="apptDate">Date <span class="req">*</span></label>
+            <input class="input" id="apptDate" name="date" type="date" required>
+            <span class="err">Choose today or a later date.</span>
+          </div>
+
+          <div class="field" id="fTime">
+            <label for="apptTime">Time <span class="req">*</span></label>
+            <select class="select" id="apptTime" name="time" required></select>
+            <span class="err">Please choose a time slot.</span>
+          </div>
+        </div>
+
+        <div class="form-foot">
+          <p class="hint">Fields marked <span class="req">*</span> are required.</p>
+          <button class="btn btn--ghost" type="reset">Clear form</button>
+          <button class="btn btn--primary" type="submit" id="saveBtn">Book appointment</button>
+        </div>
+
+      </form>
+
+      <!-- ---------- live cost summary ---------- -->
+      <aside class="rail">
+        <h3>What it will cost</h3>
+        <div class="rail__row">
+          <span id="sumTreatmentName">Treatment</span>
+          <span id="sumTreatment">Rs. 0.00</span>
+        </div>
+        <div class="rail__row">
+          <span id="sumDentistName">Consultation</span>
+          <span id="sumConsult">Rs. 0.00</span>
+        </div>
+        <div class="rail__total">
+          <span>Estimate</span>
+          <strong id="sumTotal">Rs. 0.00</strong>
+        </div>
+        <p class="hint" style="margin-top:16px">
+          This is an estimate. The final bill is worked out at the counter after your
+          visit, and X-rays or materials are added there if they are needed.
+        </p>
+        <p class="hint" style="margin-top:12px">
+          Emergency? Please call <a href="tel:+94771234567">077 123 4567</a> instead of
+          waiting for an online slot.
+        </p>
+      </aside>
+
+    </div>
+
+    <!-- ---------- confirmation ---------- -->
+    <div class="box done wrap-mid" id="doneView" hidden>
+      <div class="done__tick" aria-hidden="true">&#10003;</div>
+      <h2>Your appointment is booked</h2>
+      <p>We have sent a confirmation to your contact number. Reception will call you
+         to confirm the slot before your visit.</p>
+
+      <p class="done__no" id="doneNo">APT-0000</p>
+      <p class="done__hint">Please write this number down &mdash; you will need it to
+         check or change your appointment, and at the counter when you arrive.</p>
+
+      <div class="done__actions">
+        <a class="btn btn--primary" href="index.html#lookupForm">Check this appointment</a>
+        <button class="btn btn--ghost" type="button" id="doneAgain">Book another</button>
+        <a class="btn btn--quiet" href="index.html">Back to the website</a>
+      </div>
+
+      <div class="done__recap">
+        <div class="kv" id="doneRecap"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ============ footer ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+
+    <div class="footer__brand">
+      <a class="brand brand--footer" href="index.html">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-1.6 0-2.3.6-3.7.6C6.3 3.6 4 5.2 4 8.6c0 2.7.9 4.3 1.6 6.6.5 1.6.6 4.8 2.2 4.8 1.5 0 1.6-2.4 2.4-4.3.4-1 .9-1.5 1.8-1.5s1.4.5 1.8 1.5c.8 1.9.9 4.3 2.4 4.3 1.6 0 1.7-3.2 2.2-4.8.7-2.3 1.6-3.9 1.6-6.6 0-3.4-2.3-5-4.3-5-1.4 0-2.1-.6-3.7-.6Z"/></svg>
+        </span>
+        <span class="brand__text"><strong>Sunrise</strong><em>Dental Clinic</em></span>
+      </a>
+      <p class="footer__blurb">A family dental practice in Colombo 03, running on its own appointment management system since 2009.</p>
+    </div>
+
+    <nav class="footer__col" aria-label="Patients">
+      <h4>For patients</h4>
+      <ul>
+        <li><a href="book.html">Book an appointment</a></li>
+        <li><a href="index.html#lookupForm">Check my appointment</a></li>
+        <li><a href="index.html#services">Treatments and fees</a></li>
+        <li><a href="index.html#contact">Opening hours</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer__col" aria-label="Clinic">
+      <h4>Clinic</h4>
+      <ul>
+        <li><a href="index.html#dentists">Our dentists</a></li>
+        <li><a href="index.html#how">How booking works</a></li>
+        <li><a href="tel:+94112345678">011 234 5678</a></li>
+        <li><a href="mailto:hello@smilecare.lk">hello@smilecare.lk</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer__col" aria-label="Staff">
+      <h4>Staff</h4>
+      <ul>
+        <li><a href="login.html">Staff login</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="container footer__bar">
+    <p>&copy; <span id="year">2026</span> Sunrise Dental Clinic, Colombo. All rights reserved.</p>
+    <p class="footer__bar-right">No. 128, Galle Road, Colombo 03 &middot; 011 234 5678</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/main.js"></script>
+<script src="js/appointment.js"></script>
+</body>
+</html>

@@ -65,13 +65,17 @@ written to MySQL in that mode.
 | Feature | Screen |
 |---|---|
 | Staff login and safe exit | `login.html`, sidebar |
+| Today's figures and 7-day trends | `dashboard.html` |
 | Register an appointment | `appointment.html` |
 | Display appointment details | `search.html`, plus the lookup on the home page |
-| Calculate and print the bill | `billing.html` |
-| Help and instructions | `help.html` |
 | Reschedule, confirm, cancel | `search.html` |
-| Audit log of who did what | `audit_log` table, written automatically |
-| Confirmation e-mail to the patient | `EmailListener`, logged to the console |
+| Calculate and print the bill | `billing.html` |
+| Patient records and treatment history | `patients.html` |
+| Reminders that have been sent | `reminders.html` |
+| Reports: daily, revenue, treatments, workload, top patients | `reports.html`, admin only |
+| Dentists, treatments, staff accounts, audit log | `admin.html`, admin only |
+| Help and instructions | `help.html` |
+| Confirmation e-mail to the patient | `EmailListener`, console + `notifications` table |
 
 Appointment numbers (`APT-1042`) and receipt numbers (`BIL-7101`) are generated
 by the server, never typed by staff. One dentist cannot be booked twice in the
@@ -85,12 +89,14 @@ same slot; a cancelled appointment frees its slot again.
 | **Factory** | `DaoFactory` | services ask for a DAO instead of calling `new` |
 | **DAO** | `dao` package | no SQL anywhere else in the program |
 | **DTO** | `model` package | immutable records carry data between the layers |
-| **Strategy** | `PricingStrategy`, `StandardPricing`, `PromotionalPricing` | the charging rule can change without touching billing |
+| **Strategy** | `PricingStrategy` and its five rules, picked by `PricingStrategies` | the charging rule can change without touching billing |
 | **Observer** | `AppointmentListener`, `AuditListener`, `EmailListener` | booking announces what happened; listeners react |
 | **Template method** | `ApiHandler` | every endpoint shares CORS, error handling and auth |
 | **MVC** | pages / handlers / services | the browser draws, the server decides |
 
-To see Strategy switch, put this in `backend/config.properties` and restart:
+The billing screen picks the rule per bill — standard, senior citizen,
+insurance or loyalty — and the one used is stored on the receipt. The rule in
+`backend/config.properties` is the fallback when a caller sends no choice:
 
 ```
 pricing.strategy=promotional
@@ -102,9 +108,14 @@ pricing.discount=15
 ```
 index.html              clinic website, public
 login.html              staff sign-in
+dashboard.html          figures and trends, the screen you land on
 appointment.html        register an appointment
-search.html             find one, and the day diary
-billing.html            charges, receipt, print
+search.html             find one, the day diary, send a reminder
+billing.html            charges, pricing rule, receipt, print
+patients.html           patient records and treatment history
+reminders.html          log of everything the system has sent
+reports.html            daily, revenue, treatments, workload, patients
+admin.html              dentists, treatments, staff accounts, audit log
 help.html               instructions for the front desk
 css/styles.css          website + shared design tokens
 css/app.css             the staff application shell

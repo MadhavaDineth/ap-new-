@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register appointment | Sunrise</title>
+  <meta name="robots" content="noindex">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="app-body">
+
+<div class="side-backdrop"></div>
+
+<div class="app">
+
+  <!-- ============ sidebar ============ -->
+  <aside class="side">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-1.6 0-2.3.6-3.7.6C6.3 3.6 4 5.2 4 8.6c0 2.7.9 4.3 1.6 6.6.5 1.6.6 4.8 2.2 4.8 1.5 0 1.6-2.4 2.4-4.3.4-1 .9-1.5 1.8-1.5s1.4.5 1.8 1.5c.8 1.9.9 4.3 2.4 4.3 1.6 0 1.7-3.2 2.2-4.8.7-2.3 1.6-3.9 1.6-6.6 0-3.4-2.3-5-4.3-5-1.4 0-2.1-.6-3.7-.6Z"/></svg>
+      </span>
+      <span class="brand__text"><strong>Sunrise</strong><em>Front desk</em></span>
+    </a>
+
+    <p class="side__label">Workspace</p>
+    <nav class="side__nav" aria-label="Workspace">
+      <a href="dashboard.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="3.2" width="7.6" height="7.6" rx="1.6"/><rect x="13.2" y="3.2" width="7.6" height="4.6" rx="1.6"/><rect x="13.2" y="10.2" width="7.6" height="10.6" rx="1.6"/><rect x="3.2" y="13.2" width="7.6" height="7.6" rx="1.6"/></svg>
+        Dashboard
+      </a>
+      <a href="appointment.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M8 2.5v4M16 2.5v4M3 9.5h18M12 13v5M9.5 15.5h5"/></svg>
+        Register appointment
+      </a>
+      <a href="search.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+        Find appointment
+      </a>
+      <a href="billing.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.5h12v19l-3-2-3 2-3-2-3 2v-19Z"/><path d="M9.5 8h5M9.5 12h5"/></svg>
+        Bills and receipts
+      </a>
+      <a href="patients.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3.5 19.2c0-3.3 2.5-5.7 5.5-5.7s5.5 2.4 5.5 5.7"/><circle cx="17.5" cy="8.7" r="2.3"/><path d="M15.8 13.6c2.4.5 4.2 2.6 4.2 5.6"/></svg>
+        Patients
+      </a>
+      <a href="reminders.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9.8a6 6 0 0 1 12 0c0 3.3.8 5.1 1.6 6.2H4.4c.8-1.1 1.6-2.9 1.6-6.2Z"/><path d="M10.2 19.4a1.9 1.9 0 0 0 3.6 0"/></svg>
+        Reminders
+      </a>
+    </nav>
+
+    <p class="side__label" data-admin-only hidden>Manage</p>
+    <nav class="side__nav" aria-label="Manage" data-admin-only hidden>
+      <a href="reports.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 19v-6M12.5 19V9M17 19v-9"/></svg>
+        Reports
+      </a>
+      <a href="admin.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.6 2.9c.5-1.2 2.3-1.2 2.8 0l.4 1c.3.7 1.1 1.1 1.8.9l1-.3c1.3-.4 2.4.9 1.8 2.1l-.5.9c-.4.6-.2 1.5.4 2l.8.6c1 .8.7 2.5-.6 2.9l-1 .3c-.7.2-1.2 1-1.1 1.7l.1 1c.2 1.3-1.2 2.2-2.3 1.5l-.9-.6c-.6-.4-1.5-.4-2 0l-.9.6c-1.1.7-2.5-.2-2.3-1.5l.1-1c.1-.7-.4-1.5-1.1-1.7l-1-.3c-1.3-.4-1.6-2.1-.6-2.9l.8-.6c.6-.5.8-1.4.4-2l-.5-.9c-.6-1.2.5-2.5 1.8-2.1l1 .3c.7.2 1.5-.2 1.8-.9l.4-1Z"/><circle cx="12" cy="12" r="2.6"/></svg>
+        Admin panel
+      </a>
+    </nav>
+
+    <p class="side__label">Support</p>
+    <nav class="side__nav" aria-label="Support">
+      <a href="help.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9.2"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.3c-.7.3-1 .9-1 1.6v.3M12 17.2h.01"/></svg>
+        Help and instructions
+      </a>
+      <a href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/></svg>
+        Clinic website
+      </a>
+    </nav>
+
+    <div class="side__foot">
+      <div class="side__user">
+        <span class="side__avatar" aria-hidden="true">--</span>
+        <span class="side__who">
+          <strong data-user-name>Staff member</strong>
+          <span data-user-role>staff</span>
+        </span>
+      </div>
+      <button class="side__exit" type="button" data-logout>
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3.5h4a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-4"/><path d="M10 16.5 14.5 12 10 7.5M14.5 12H4"/></svg>
+        Exit the system
+      </button>
+    </div>
+  </aside>
+
+  <!-- ============ main ============ -->
+  <div class="app__main">
+
+    <header class="appbar">
+      <button class="side-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div>
+        <p class="appbar__crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Appointments</p>
+        <p class="appbar__title">Register appointment</p>
+      </div>
+      <div class="appbar__spacer"></div>
+      <div class="appbar__actions">
+        <a class="btn btn--ghost" href="search.html">Find <span>an appointment</span></a>
+      </div>
+    </header>
+
+    <div class="app__content" data-demo-slot>
+
+      <div class="page-head wrap-mid">
+        <h1>New appointment</h1>
+        <p>Fill in the patient details and pick a free slot. The appointment number is
+           generated automatically once the record is saved.</p>
+      </div>
+
+      <!-- ---------- the form ---------- -->
+      <div class="book" id="bookView">
+
+        <form class="box" id="apptForm" novalidate>
+
+          <div class="box__head">
+            <h2>Patient details</h2>
+          </div>
+
+          <div class="form-grid">
+            <div class="field" id="fName">
+              <label for="patientName">Patient name <span class="req">*</span></label>
+              <input class="input" id="patientName" name="patientName" type="text"
+                     placeholder="Nimal Perera" autocomplete="off" required>
+              <span class="err">Please enter the name of the patient.</span>
+            </div>
+
+            <div class="field" id="fContact">
+              <label for="contactNo">Contact number <span class="req">*</span></label>
+              <input class="input" id="contactNo" name="contactNo" type="tel"
+                     placeholder="0771234567" inputmode="numeric" maxlength="12" required>
+              <span class="err">Enter a 10 digit mobile or land number.</span>
+            </div>
+
+            <div class="field span-2" id="fAddress">
+              <label for="address">Address <span class="req">*</span></label>
+              <textarea class="textarea" id="address" name="address" rows="2"
+                        placeholder="45/2, Temple Road, Nugegoda" required></textarea>
+              <span class="err">Please enter the address of the patient.</span>
+            </div>
+          </div>
+
+          <div class="box__head" style="margin-top:30px">
+            <h2>Appointment</h2>
+          </div>
+
+          <div class="form-grid">
+            <div class="field" id="fDentist">
+              <label for="dentistId">Dentist <span class="req">*</span></label>
+              <select class="select" id="dentistId" name="dentistId" required>
+                <option value="">Loading dentists...</option>
+              </select>
+              <span class="err">Please choose a dentist.</span>
+            </div>
+
+            <div class="field" id="fTreatment">
+              <label for="treatmentId">Treatment <span class="req">*</span></label>
+              <select class="select" id="treatmentId" name="treatmentId" required>
+                <option value="">Loading treatments...</option>
+              </select>
+              <span class="err">Please choose the treatment.</span>
+            </div>
+
+            <div class="field" id="fDate">
+              <label for="apptDate">Date <span class="req">*</span></label>
+              <input class="input" id="apptDate" name="date" type="date" required>
+              <span class="err">Choose a date from today onwards.</span>
+            </div>
+
+            <div class="field" id="fTime">
+              <label for="apptTime">Time <span class="req">*</span></label>
+              <select class="select" id="apptTime" name="time" required></select>
+              <span class="err">Please choose a time slot.</span>
+            </div>
+          </div>
+
+          <div class="form-foot">
+            <p class="hint">Fields marked <span class="req">*</span> are required.</p>
+            <button class="btn btn--ghost" type="reset">Clear form</button>
+            <button class="btn btn--primary" type="submit" id="saveBtn">Save appointment</button>
+          </div>
+
+        </form>
+
+        <!-- ---------- live cost summary ---------- -->
+        <aside class="rail">
+          <h3>Estimated bill</h3>
+          <div class="rail__row">
+            <span id="sumTreatmentName">Treatment</span>
+            <span id="sumTreatment">Rs. 0.00</span>
+          </div>
+          <div class="rail__row">
+            <span id="sumDentistName">Consultation</span>
+            <span id="sumConsult">Rs. 0.00</span>
+          </div>
+          <div class="rail__total">
+            <span>Total</span>
+            <strong id="sumTotal">Rs. 0.00</strong>
+          </div>
+          <p class="hint" style="margin-top:16px">
+            The final bill is produced on the billing screen after the visit. X-rays and
+            materials, if any, are added there.
+          </p>
+        </aside>
+
+      </div>
+
+      <!-- ---------- confirmation ---------- -->
+      <div class="box done wrap-mid" id="doneView" hidden>
+        <div class="done__tick" aria-hidden="true">&#10003;</div>
+        <h2>Appointment registered</h2>
+        <p>The slot is now reserved and a confirmation e-mail has been queued for the patient.</p>
+
+        <p class="done__no" id="doneNo">APT-0000</p>
+        <p class="done__hint">Give this number to the patient. It is needed to look the visit up later.</p>
+
+        <div class="done__actions">
+          <a class="btn btn--primary" id="doneBill" href="billing.html">Go to billing</a>
+          <a class="btn btn--ghost" id="doneView2" href="search.html">View the record</a>
+          <button class="btn btn--quiet" type="button" id="doneAgain">Register another</button>
+        </div>
+
+        <div class="done__recap">
+          <div class="kv" id="doneRecap"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/appointment.js"></script>
+</body>
+</html>
